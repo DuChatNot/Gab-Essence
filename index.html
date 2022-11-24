@@ -9,13 +9,11 @@
   <title>Frontend Mentor | Product preview card component</title>
 
   <style>
-    *{
-      background: floralwhite;
-    }
+    
 
     .container{
       display: flex;
-      background: white;
+      background: floralwhite;
       width: 500px;
       height: 350px;
       border-radius: 20px;
@@ -30,28 +28,42 @@
       width: 50%;
     }
 
-    #subcontainer1{
-
-      color: grey;
+    #imgcontainer img{
+      width: 250px;
+      height: 350px;
     }
 
-    #subcontainer2{
+    #rightcontainer{
+      display: grid;
+      width: 250px;
+      height: 350px;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .rightcontainer .item:nth-child(1){
+
+      color: grey;
+      letter-spacing: 2px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .rightcontainer .item:nth-child(2){
       color: black;
     }
 
-    #subcontainer3{
+    .rightcontainer .item:nth-child(3){
       color: gray;
     }
 
-    #subcontainer4{
+    .rightcontainer .item:nth-child(4){
       color: green;
     }
 
-    #subcontainer5{
+    .rightcontainer .item:nth-child(5){
       color: gray;
     }
 
-    #subcontainer6{
+    .rightcontainer .item:nth-child(6){
       color: white;
       background: green;
     }
@@ -67,33 +79,37 @@
 
   <div class="container">
 
-    <img src="productdesktop.jpg">
+    <div id="imgcontainer">
+      <img src="productdesktop.jpg">
+    </div>
 
-   <div>
-    <div id="subcontainer1">
+   <div class="rightcontainer">
+    <div class="item">
 
-      Preview
+      PREVIEW
 
     </div>
 
-    <div id="subcontainer2">
-      Gabrielle Essence Eau De Parfum
+    <div class="item">
+      Gabrielle 
+      Essence Eau 
+      De Parfum
     </div>
 
-    <div id="subcontainer3">
+    <div class="item">
       A floral, solar and voluptuous interpretation composed by Olivier Polge, 
     Perfumer-Creator for the House of CHANEL.
     </div>
 
-    <div id="subcontainer4">
+    <div class="item">
       $149.99
     </div>
 
-    <div id="subcontainer5">
+    <div class="item">
       $169.99
     </div>
 
-    <div id="subcontainer6">
+    <div class="item">
       Add to Cart
     </div>
 
