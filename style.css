@@ -28,8 +28,8 @@ body{
 
 #main{
     display: flex;
-    width: 500px;
-    height: 350px;
+    width: 525px;
+    height: 400px;
     background-color: var(--White);
     border-radius: 8px;
     justify-self: center;
@@ -50,6 +50,7 @@ body{
     display: grid;
     grid-template-rows:1fr 1fr 1fr 1fr 1fr;
     padding:8px 32px 8px 32px;
+    border-radius: 8px;
 }
 
 #rightcontainer p{
@@ -58,38 +59,79 @@ body{
     align-self: center;
 }
 
-#rightcontainer p:nth-child(1){
+#rightcontainer > p:nth-child(1){
     font-size: var(--sm);
-    font-family: 'Montserrat', sans-serif;
     color: var(--Dark-grayish-blue);
+    letter-spacing: 5px;
+    padding-top: 8px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#rightcontainer p:nth-child(2){
+#rightcontainer > p:nth-child(2){
     font-size: var(--md);
     color: var(--Very-dark-blue);
-    margin: 20px 0 20px 0;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+    line-height: 28px;
 }
 
 #rightcontainer p:nth-child(3){
-    font-size: var(--sm);
+    font-size: 12px;
     color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    line-height: 18px;
 }
 
-#rightcontainer p:nth-child(4){
-    font-size: var(--sm);
+#price{
+    display: flex;
+    background: var(--White);
+    padding: 4px;
+    margin: 8px 0;
+}
+
+#price p:nth-child(1){
     color: var(--Dark-cyan);
+    font-size: var(--md);
+    letter-spacing: 0;
+}
+
+#price p:nth-child(2){
+    color: var(--Dark-grayish-blue);
+    font-size: var(--sm);
+    text-decoration: line-through;
+    padding-left: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #btn{
     color: var(--White);
     background: var(--Dark-cyan); 
-    width: 200px;
+    width: 220px;
     height: 40px;
     border-radius: 6px;
     letter-spacing: 0.5px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: var(--sm);
     border: 0;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+    margin-top: 8px;
+}
+
+#btn:active{
+    background: #1e4032;
+}
+
+#btn img{
+    background: none;
+    width: 13px;
 }
 
 #attribution{
