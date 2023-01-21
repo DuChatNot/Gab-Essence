@@ -43,6 +43,10 @@ body{
     border-radius: 8px 0 0 8px;
 }
 
+#imgmob{
+    display: none;
+}
+
 #rightcontainer{
     background: var(--White);
     width: 250px;
@@ -150,16 +154,30 @@ body{
     }
 
     #img{
+        display: none;
+    }
+
+    #imgmob{
+        display: block;
+        object-fit: cover;
         width: 330px;
-        height: 350px;
-        border-radius: 8px 8px 0 0;
+        height: 200px;
+        padding-top: 40px;
     }
 
     #rightcontainer{
         width: 266px;
         border-radius: 0 0 8px 8px;
         height: 350px;
-        justify-content: center;
+        justify-content: start;
+    }
+
+    #rightcontainer > p:nth-child(3){
+        font-size: 15px;
+    }
+
+    #btn{
+        width: 270px;
     }
 
 }
